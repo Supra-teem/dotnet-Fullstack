@@ -1,0 +1,14 @@
+C:\Users\Suprateem\Desktop\Projects\dotnet-Fullstack\WPF\WpfApp2\circle diameter\bin\Debug\circle diameter.exe
+C:\Users\Suprateem\Desktop\Projects\dotnet-Fullstack\WPF\WpfApp2\circle diameter\bin\Debug\circle diameter.exe.config
+C:\Users\Suprateem\Desktop\Projects\dotnet-Fullstack\WPF\WpfApp2\circle diameter\obj\Debug\MainWindow.g.cs
+C:\Users\Suprateem\Desktop\Projects\dotnet-Fullstack\WPF\WpfApp2\circle diameter\obj\Debug\App.g.cs
+C:\Users\Suprateem\Desktop\Projects\dotnet-Fullstack\WPF\WpfApp2\circle diameter\obj\Debug\circle diameter_MarkupCompile.cache
+C:\Users\Suprateem\Desktop\Projects\dotnet-Fullstack\WPF\WpfApp2\circle diameter\obj\Debug\circle diameter_MarkupCompile.lref
+C:\Users\Suprateem\Desktop\Projects\dotnet-Fullstack\WPF\WpfApp2\circle diameter\obj\Debug\MainWindow.baml
+C:\Users\Suprateem\Desktop\Projects\dotnet-Fullstack\WPF\WpfApp2\circle diameter\obj\Debug\circle diameter.g.resources
+C:\Users\Suprateem\Desktop\Projects\dotnet-Fullstack\WPF\WpfApp2\circle diameter\obj\Debug\circle_diameter.Properties.Resources.resources
+C:\Users\Suprateem\Desktop\Projects\dotnet-Fullstack\WPF\WpfApp2\circle diameter\obj\Debug\circle diameter.csproj.GenerateResource.cache
+C:\Users\Suprateem\Desktop\Projects\dotnet-Fullstack\WPF\WpfApp2\circle diameter\obj\Debug\circle diameter.csproj.CoreCompileInputs.cache
+C:\Users\Suprateem\Desktop\Projects\dotnet-Fullstack\WPF\WpfApp2\circle diameter\obj\Debug\circle diameter.exe
+C:\Users\Suprateem\Desktop\Projects\dotnet-Fullstack\WPF\WpfApp2\circle diameter\obj\Debug\circle diameter.pdb
+C:\Users\Suprateem\Desktop\Projects\dotnet-Fullstack\WPF\WpfApp2\circle diameter\bin\Debug\circle diameter.pdb
