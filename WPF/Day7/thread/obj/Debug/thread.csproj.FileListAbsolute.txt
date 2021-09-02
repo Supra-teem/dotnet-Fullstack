@@ -1,0 +1,7 @@
+C:\Users\Suprateem\Desktop\Projects\dotnet-Fullstack\WPF\Day7\thread\bin\Debug\thread.exe.config
+C:\Users\Suprateem\Desktop\Projects\dotnet-Fullstack\WPF\Day7\thread\bin\Debug\thread.exe
+C:\Users\Suprateem\Desktop\Projects\dotnet-Fullstack\WPF\Day7\thread\bin\Debug\thread.pdb
+C:\Users\Suprateem\Desktop\Projects\dotnet-Fullstack\WPF\Day7\thread\obj\Debug\thread.csproj.AssemblyReference.cache
+C:\Users\Suprateem\Desktop\Projects\dotnet-Fullstack\WPF\Day7\thread\obj\Debug\thread.csproj.CoreCompileInputs.cache
+C:\Users\Suprateem\Desktop\Projects\dotnet-Fullstack\WPF\Day7\thread\obj\Debug\thread.exe
+C:\Users\Suprateem\Desktop\Projects\dotnet-Fullstack\WPF\Day7\thread\obj\Debug\thread.pdb
