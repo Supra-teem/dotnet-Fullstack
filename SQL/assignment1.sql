@@ -26,3 +26,6 @@ select * from Dept
 select sum(salary) as TotalSalary from Emp
 select name,(salary*12) as Annual_Income from Emp
 select *,(salary*10/100) as TA, (salary*5/100) as DA, (salary*5/100) as HRA, salary+(salary*0.1)+(salary*0.05)+(salary*0.05) as Gross, (salary+(salary*0.1)+(salary*0.05)+(salary*0.05))*12 as Annual from Emp
+
+
+select * from Emp where empid in(select empid from Dept where dept_id between 5000 and 6000)
