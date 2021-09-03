@@ -16,5 +16,17 @@ as
 begin return (select @my_age+' '+@my_marks)
 end
 
+create function my_function1
+(
+	@my_age int,
+	@my_marks int
+
+)
+returns nvarchar(30)
+as
+begin return (select @my_age+' '+@my_marks)
+end
+
 select * from student
 select dbo.my_function(age,marks) as Details from student
+
