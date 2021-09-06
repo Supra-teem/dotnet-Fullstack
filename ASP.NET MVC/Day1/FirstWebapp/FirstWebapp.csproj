@@ -171,6 +171,7 @@
     <Content Include="Views\Student\EnterDetails.cshtml" />
     <Content Include="Views\Student\Details.cshtml" />
     <Content Include="Views\Movie\showtable.cshtml" />
+    <Content Include="Views\Movie\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
