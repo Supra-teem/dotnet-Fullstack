@@ -17,5 +17,10 @@ namespace FirstWebapp.Controllers
         {
             return View();
         }
+        public ActionResult Details(string str)
+        {
+            ViewData["name"] = str;
+            return View();
+        }
     }
 }
