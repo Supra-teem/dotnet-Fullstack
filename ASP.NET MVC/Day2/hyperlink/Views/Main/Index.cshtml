@@ -25,13 +25,13 @@
             <div class="collapse navbar-collapse" id="navbarNav">
                 <ul class="navbar-nav">
                     <li class="nav-item active">
-                        @Html.ActionLink("MainPage", "Index","Main",new {@class="nav-link"})
+                        @Html.ActionLink("MainPage", "Index", "Main", new { @class = "nav-link" })
                     </li>
                     <li class="nav-item">
-                        @Html.ActionLink("HomePage", "Home","Main", new { @class = "nav-link" })    
+                        @Html.ActionLink("HomePage", "Home", "Main", new { @class = "nav-link" })
                     </li>
                     <li class="nav-item">
-                        @Html.ActionLink("About Page", "About", "Main", new { @class = "nav-link" })    
+                        @Html.ActionLink("About Page", "About", "Main", new { @class = "nav-link" })
                     </li>
                     <li class="nav-item">
                         @Html.ActionLink("contact", "Contact", "Main", new { @class = "nav-link" })
@@ -43,10 +43,16 @@
                         @Html.ActionLink("SignUp", "SignUp", "Main", new { @class = "nav-link" })
                     </li>
                 </ul>
-                
             </div>
         </div>
     </nav>
+    <div class="container body-content">
+        @RenderBody()
+        <hr />
+        <footer>
+            <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
+        </footer>
+    </div>
     <div align="Center">
         <h2>Welcome to the Index Page</h2>
     </div>
