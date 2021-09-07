@@ -1,0 +1,30 @@
+﻿
+@{
+    ViewBag.Title="Index";
+}
+
+<!doctype html>
+<html lang="en">
+<head>
+    
+    <style>
+        body {
+            background-color: #0ED2F7;
+            text-align: left;
+        }
+    </style>
+</head>
+<body>
+    <h1>Welcome to the Login Page</h1>
+    <div>
+        @Html.Label("name", "User Name")
+        @Html.TextBox("txtname", "", new { @class = "form-control", placeholder = "Enter Username" })
+        @Html.Label("pass", "Password")
+        @Html.Password("Password", "", new { @class = "form-control" })
+        <br /><button type="button" class="btn btn-success">Success</button>
+    </div>
+
+   
+</body>
+</html>
+
