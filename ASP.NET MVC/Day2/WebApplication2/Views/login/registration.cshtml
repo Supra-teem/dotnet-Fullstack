@@ -1,0 +1,79 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>registration</title>
+    <style>
+        body {
+            background-color: #0ED2F7;
+            text-align:center;
+        }
+        .btn_success {
+            background-color: #4CAF50; /* Green */
+            border: none;
+            color: white;
+            padding: 15px 32px;
+            text-align: center;
+            text-decoration: none;
+            display: inline-block;
+            font-size: 16px;
+        }
+        .btn_success:hover {
+            box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+        }
+
+    </style>
+</head>
+<body>
+    <div class="form-control">
+        <h1>Welcome to the Login page</h1>
+        <div class="form-group">
+            @Html.Label("username", "Username", new {@class= "control-label col-md-2" })
+            <div class="col-md-10">
+                @Html.TextBox("usernametext", "", new { @class = "form-control", placeholder = "Enter User Name" })
+            </div>
+        </div>
+        @Html.Label("address", "Address")
+        @Html.TextBox("addrtext", "", new { @class = "form-control", placeholder = "Enter Address" })<br /> <br />
+        @Html.Label("Email", "Email")
+        @Html.TextBox("Emailtext", "", new { @class = "form-control", placeholder = "Enter User Email" })<br /> <br />
+        @Html.Label("number", "Contact Number")
+        @Html.TextBox("numbertext", "", new { @class = "form-control", placeholder = "Enter User Number" })<br /> <br />
+        @Html.Label("city", "City")
+        @Html.TextBox("citytext", "", new { @class = "form-control", placeholder = "Enter City" })<br /> <br />
+        @Html.Label("gender", "Gender")
+        @Html.DropDownList("Gender", new List<SelectListItem>{
+                   new SelectListItem { Text="Male",Value="1"},
+                   new SelectListItem { Text="Female",Value="2"}
+                                    }, "", new { @class = "form-control" })<br /><br />
+        @Html.Label("age", "Age")
+        @Html.TextBox("agetext", "", new { @class = "form-control", placeholder = "Enter Age" })<br /> <br />
+        @Html.Label("salary", "Salary")
+        @Html.TextBox("saltext", "", new { @class = "form-control", placeholder = "Enter Salary" })<br /> <br />
+        <button type="submit" class="btn_success" value="submit">Submit</button>
+       @* <button>
+            Submit
+            <style>
+                button {
+                    background-color: #04AA6D; /* darkGreen */
+                    border: 3px;
+                    color: white;
+                    padding: 15px 32px;
+                    text-align: center;
+                    text-decoration: none;
+                    display: inline-block;
+                    font-size: 16px;
+                }
+            </style>
+        </button>*@
+
+
+    </div>
+</body>
+</html>

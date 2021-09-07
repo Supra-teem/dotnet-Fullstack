@@ -1,0 +1,35 @@
+﻿@using stronglytyped.Models
+@model Employees 
+@{
+    ViewBag.Title = "Index";
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>details</title>
+</head>
+<body>
+    <div>
+        <h3>Textbox Example</h3>
+        @Html.Label("name", "Name")
+        @Html.TextBoxFor(model => model.Name, new { @class = "form-control", placeholder = "Enter your name" })
+        @Html.Label("add", "Address")
+        @Html.TextBoxFor(model => model.address, new { @class = "form-control", placeholder = "Enter your address" })
+        <h3>Gender (Radio Button)</h3>
+        @Html.RadioButtonFor(model => model.Gender, true, new { id = "Male-true" })
+        @Html.Label("Male-true", "Male")
+        @Html.RadioButtonFor(model => model.Gender, true, new { id = "FeMale-true" })
+        @Html.Label("FeMale-true", "FeMale")
+
+        <h3>City (Dropdownlist)</h3>
+        @Html.DropDownListFor(model => model.city, new SelectList(Enum.GetValues(typeof(city))), "Select city", new { @class = "form-control" })
+        <h3>Department (Dropdownlist)</h3>
+        @Html.ListBoxFor(model => model.dept, new SelectList(Enum.GetValues(typeof(dept)), new { @class = "form-control" }))
+        <br /><br /><input type="submit" value="submit" />
+    </div>
+  
+</body>
+</html>

@@ -1,0 +1,29 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+    <style>
+        Body {
+            font-family: Calibri, Helvetica, sans-serif;
+            background-color: #87CEEB;
+        }
+    </style>
+</head>
+<body>
+    <div>
+        <h3>Welcome to the Login page</h3>
+        @Html.Label("username","Username")
+        @Html.TextBox("usernametext","", new { @class= "form-control", placeholder="Enter User Name" })<br /> <br />
+        @Html.Label("pass","Password")
+        @Html.Password("password","", new { @class="form-control" })
+
+    </div>
+</body>
+</html>

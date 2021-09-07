@@ -1,0 +1,34 @@
+﻿
+@{
+    Layout = null;
+}
+
+<!DOCTYPE html>
+
+<html>
+<head>
+    <meta name="viewport" content="width=device-width" />
+    <title>Index</title>
+</head>
+<body>
+    <div>
+        <h3>HTML Helper Demo</h3>
+        @Html.Label("Firstname", "Enter Name")
+        @Html.TextBox("txtFirstname", "", new { @class = "form-control", placeholder = "Your Name" })
+        <h3>Text area demo</h3>
+
+        @Html.TextArea("Address", new { @class = "form-control", rows = "6" })
+        <h3>Password</h3>
+        @Html.Password("Password", "", new { @class = "form-control" })
+        <h3>List Box</h3>
+        @Html.ListBox("Skillset", new List<SelectListItem>{
+    new SelectListItem { Text="ASp",Value="1"},
+    new SelectListItem { Text="java",Value="2"},
+    new SelectListItem { Text="C#",Value="3"},
+    new SelectListItem { Text="HTML",Value="4"}
+
+    }, new { @class = "form-control" })
+
+    </div>
+</body>
+</html>
