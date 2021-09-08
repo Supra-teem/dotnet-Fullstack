@@ -4,42 +4,51 @@
     ViewBag.Title = "Index";
 }
 
-<h2>Employee Table</h2>
+<h2 style="text-align:center; background-color:darkblue; color:white; font-family:'Times New Roman', Times, serif">Employee Table</h2>
+<style>
+    .mytable {
+        background: lightblue;
+        font-family:'Times New Roman', Times, serif;
+    }
+</style>
+<div class="mytable">
+    <table class="table">
+        <tr>
+            <th>
+                @Html.DisplayNameFor(model => model.empid)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.name)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.dept)
+            </th>
+            <th>
+                @Html.DisplayNameFor(model => model.salary)
+            </th>
+            <th></th>
+        </tr>
 
-
-<table class="table">
+    @foreach (var item in Model) {
     <tr>
-        <th>
-            @Html.DisplayNameFor(model => model.empid)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.name)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.dept)
-        </th>
-        <th>
-            @Html.DisplayNameFor(model => model.salary)
-        </th>
-        <th></th>
+        <td>
+            @Html.DisplayFor(modelItem => item.empid)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.name)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.dept)
+        </td>
+        <td>
+            @Html.DisplayFor(modelItem => item.salary)
+        </td>
+        <td>
+            @Html.ActionLink("Details", "Details", new { id = item.empid })
+        </td>
+
     </tr>
+    }
 
-@foreach (var item in Model) {
-<tr>
-    <td>
-        @Html.DisplayFor(modelItem => item.empid)
-    </td>
-    <td>
-        @Html.DisplayFor(modelItem => item.name)
-    </td>
-    <td>
-        @Html.DisplayFor(modelItem => item.dept)
-    </td>
-    <td>
-        @Html.DisplayFor(modelItem => item.salary)
-    </td>
-
-</tr>
-}
-
-</table>
+    </table>
+ </div>
