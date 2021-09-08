@@ -39,5 +39,13 @@ namespace Db_connectivity.Controllers
             Emp em = db.Emps.FirstOrDefault(x => x.empid == id);
             return View(em);
         }
+        public ActionResult Delete(int id)
+        {
+            MindteckEntities db = new MindteckEntities();
+            Emp em = db.Emps.FirstOrDefault(x => x.empid == id);
+            db.Emps.Remove(em);
+            db.SaveChanges();
+            return RedirectToAction("Index");
+        }
     }
 }
