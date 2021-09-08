@@ -10,6 +10,23 @@ namespace Db_connectivity.Controllers
     public class DatabaseController : Controller
     {
         // GET: Database
+        public ActionResult Create()
+        {
+
+            return View();
+        }
+        [HttpPost]
+        public ActionResult Create(Emp e)
+        {
+            MindteckEntities db = new MindteckEntities();
+            if (ModelState.IsValid)
+            {
+                db.Emps.Add(e);
+                db.SaveChanges();
+                return RedirectToAction("Index");
+            }
+            return View(e);
+        }
         public ActionResult Index()
         {
             MindteckEntities db = new MindteckEntities();
