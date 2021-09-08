@@ -47,5 +47,22 @@ namespace Db_connectivity.Controllers
             db.SaveChanges();
             return RedirectToAction("Index");
         }
+        public ActionResult Edit(int id)
+        {
+            MindteckEntities db = new MindteckEntities();
+            Emp em = db.Emps.FirstOrDefault(x => x.empid == id);
+            
+            return View(em);
+        }
+        [HttpPost]
+        public ActionResult Edit(Emp e)
+        {
+            MindteckEntities db = new MindteckEntities();
+            Emp em = db.Emps.FirstOrDefault(x => x.empid == e.empid);
+            db.Emps.Remove(em);
+            db.Emps.Add(e);
+            db.SaveChanges();
+            return RedirectToAction("Index");
+        }
     }
 }
