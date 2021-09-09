@@ -6,3 +6,20 @@
 <h2>Index</h2>
 
 @Html.ActionLink("Download The File", "Download", "file")
+
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script> />
+<div class="jumbotron">
+    <h2 style="color:chocolate">Welcome to Computer Shop Management</h2>
+</div>
+
+
+<script>
+$(document).ready(function abc() {
+   $("button").click(function () {
+       $.getScript("/file/WarningMessage");
+   });
+});
+</script>
+
+<button onclick="abc()">Show Message</button>
+

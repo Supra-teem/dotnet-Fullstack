@@ -20,5 +20,12 @@ namespace scaffolding.Controllers
             string filename = "mytxt1.txt";
             return File(fileBytes, System.Net.Mime.MediaTypeNames.Application.Octet, filename);
         }
+        [HttpGet]
+        public JavaScriptResult WarningMessage()
+        {
+            var msg = "alert('Are you sure want to Continue?');";
+            return new JavaScriptResult() { Script = msg };
+        }
+
     }
 }

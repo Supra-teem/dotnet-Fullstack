@@ -214,6 +214,7 @@
     <Content Include="Views\scaff\Edit.cshtml" />
     <Content Include="Views\scaff\Index.cshtml" />
     <Content Include="Views\file\Index.cshtml" />
+    <Content Include="Views\file\WarningMessage.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
