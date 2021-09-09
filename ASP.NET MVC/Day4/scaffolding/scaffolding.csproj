@@ -128,6 +128,7 @@
     <Compile Include="App_Start\BundleConfig.cs" />
     <Compile Include="App_Start\FilterConfig.cs" />
     <Compile Include="App_Start\RouteConfig.cs" />
+    <Compile Include="Controllers\fileController.cs" />
     <Compile Include="Controllers\HomeController.cs" />
     <Compile Include="Controllers\scaffController.cs" />
     <Compile Include="Global.asax.cs">
@@ -212,6 +213,7 @@
     <Content Include="Views\scaff\Details.cshtml" />
     <Content Include="Views\scaff\Edit.cshtml" />
     <Content Include="Views\scaff\Index.cshtml" />
+    <Content Include="Views\file\Index.cshtml" />
   </ItemGroup>
   <ItemGroup>
     <Folder Include="App_Data\" />
