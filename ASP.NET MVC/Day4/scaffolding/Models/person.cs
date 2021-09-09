@@ -14,6 +14,7 @@ namespace scaffolding.Models
     using System.ComponentModel.DataAnnotations;
     public partial class person
     {
+        [idcheck(ErrorMessage ="You should enter an ID less than 500")]
         public int id { get; set; }
         public string fname { get; set; }
         public string lname { get; set; }
