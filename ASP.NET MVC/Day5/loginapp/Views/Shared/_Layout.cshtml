@@ -7,45 +7,54 @@
     <link href="~/Content/Site.css" rel="stylesheet" type="text/css" />
     <link href="~/Content/bootstrap.min.css" rel="stylesheet" type="text/css" />
     <script src="~/Scripts/modernizr-2.6.2.js"></script>
+    <style>
+        body {
+            background-color:aqua;
+        }
+    </style>
 </head>
-<body>
-    <div class="navbar navbar-inverse navbar-fixed-top">
-        <div class="container">
-            <div class="navbar-header">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                    <span class="icon-bar"></span>
-                </button>
-                @Html.ActionLink("Employee Portal", "Index", "Employees", new { area = "" }, new { @class = "navbar-brand" })
-            </div>
-            <div class="navbar-collapse collapse">
-                <ul class="nav navbar-nav">
 
-                    @if (User.Identity.IsAuthenticated)
-                    {
-                        <li>@Html.ActionLink("Get Employee List", "Index", "Employees")</li>
-                        <li>@Html.ActionLink("Add Employee", "Create", "Employees")</li>
-                        <li><a>Hello - @User.Identity.Name</a></li>
-                        <li>@Html.ActionLink("Logout", "Logout", "Accounts")</li>
-                    }
-                    else
-                    {
-                        <li>@Html.ActionLink("Login", "Login", "Accounts")</li>
-                    }
-                </ul>
+<body>
+        <div class= "navbar  navbar-light bg-light navbar-fixed-top">
+            <div class="container">
+                <a class="navbar-brand" href="/Accounts/Login">
+                    <img src="https://www.itvoice.in/wp-content/uploads/2015/10/Mindteck.png" width="190" height="40" class="d-inline-block align-top" alt="">
+                </a>
+                <div class="navbar-header">
+                    <button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                        <span class="icon-bar"></span>
+                    </button>
+                    @Html.ActionLink("Employee Portal", "Index", "Employees", new { area = "" }, new { @class = "navbar-brand" })
+                </div>
+                <div class="navbar-collapse collapse">
+                    <ul class="nav navbar-nav">
+
+                        @if (User.Identity.IsAuthenticated)
+                        {
+                            <li>@Html.ActionLink("Get Employee List", "Index", "Employees")</li>
+                            <li>@Html.ActionLink("Add Employee", "Create", "Employees")</li>
+                            <li><a>Hello - @User.Identity.Name</a></li>
+                            <li>@Html.ActionLink("Logout", "Logout", "Accounts")</li>
+                        }
+                        else
+                        {
+                            <li>@Html.ActionLink("Login", "Login", "Accounts")</li>
+                        }
+                    </ul>
+                </div>
             </div>
         </div>
-    </div>
-    <div class="container body-content">
-        @RenderBody()
-        <hr />
-        <footer>
-            <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
-            @RenderSection("scripts", required: false)
-        </footer>
-    </div>
-    <script src="~/Scripts/jquery-1.10.2.min.js"></script>
-    <script src="~/Scripts/bootstrap.min.js"></script>
+        <div class="container body-content">
+            @RenderBody()
+            <hr />
+            <footer>
+                <p>&copy; @DateTime.Now.Year - My ASP.NET Application</p>
+                @RenderSection("scripts", required: false)
+            </footer>
+        </div>
+        <script src="~/Scripts/jquery-1.10.2.min.js"></script>
+        <script src="~/Scripts/bootstrap.min.js"></script>
 </body>
 </html>
