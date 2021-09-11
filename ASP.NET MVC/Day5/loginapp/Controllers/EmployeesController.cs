@@ -115,7 +115,15 @@ namespace loginapp.Controllers
             db.SaveChanges();
             return RedirectToAction("Index");
         }
-
+        public ActionResult Hrdetails()
+        {
+            var em = from s in db.Employees   //using Linq
+                     select s;
+            
+            em = em.Where(s => s.Designation == "HR");
+            return View(em);
+            //db.Employees.Where(s => s.Designation == "HR");
+        }
         protected override void Dispose(bool disposing)
         {
             if (disposing)
