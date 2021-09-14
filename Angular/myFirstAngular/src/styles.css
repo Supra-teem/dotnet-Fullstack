@@ -5,6 +5,9 @@ table{
     border-collapse: collapse;
     
 }
+body{
+    background-color: darkturquoise;
+}
 td{
     border: 1px solid black;
 }
