@@ -11,3 +11,13 @@ body{
 td{
     border: 1px solid black;
 }
+
+.bckcolor
+{
+    background-color: black;
+}
+
+.fontcolor
+{
+    color: blanchedalmond;
+}
