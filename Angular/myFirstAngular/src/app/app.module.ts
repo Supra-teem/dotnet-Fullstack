@@ -6,11 +6,14 @@ import { AppComponent } from './app.component';
 import { StudentloginComponent } from './student/studentlogin/studentlogin.component';
 import { EmployeeComponent } from './employee/employee.component';
 import { FormsModule } from '@angular/forms';
+import { MytitlePipe } from './mytitle.pipe';
+
 
 @NgModule({
   declarations: [
     AppComponent,
-    EmployeeComponent
+    EmployeeComponent,
+    MytitlePipe
    
   ],
   imports: [
@@ -19,6 +22,6 @@ import { FormsModule } from '@angular/forms';
     FormsModule
   ],
   providers: [],
-  bootstrap: [AppComponent]
+  bootstrap: [EmployeeComponent]
 })
 export class AppModule { }

@@ -21,3 +21,33 @@
         <td>{{Age}}</td>
     </tr>
 </table>
+    <input type="radio" name="rb" (click)= "ChangeData(true)" checked > Valid
+    <input type="radio" name="rb" (click)= "ChangeData(false)"> Invalid
+  <div *ngIf="isValid">
+     <b>The Data is valid.</b>
+  </div>  
+   
+  <div *ngIf="!isValid">
+     <b>The Data is invalid.</b>
+  </div>
+
+  <table border="1">
+  <thead>
+      <tr>
+          <th>Student ID</th>
+          <th>Name</th>
+          <th>DOB</th>
+          <th>Gender</th>
+          <th>Course Fee</th>
+      </tr>
+  </thead>
+  <tbody>
+    <tr *ngFor='let student of students'>
+      <td>{{student.ID | uppercase}}</td>
+      <td>{{student.Name | mytitle:student.Gender}}</td>
+      <td>{{student.DOB | date:'MM/dd/yyyy'}}</td>
+      <td>{{student.Gender | lowercase}}</td>
+      <td>{{student.CourseFee | currency:'USD':true}}</td>
+      </tr>
+  </tbody>
+</table>
