@@ -1,0 +1,46 @@
+:host{
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+    .mat-icon{
+        vertical-align: middle;
+        margin-right: 20px;
+    }
+    .profile-card{
+        text-align: center;
+        padding: 0 20px 20px 20px;
+        img{
+            width: 100px;
+            height: 100px;
+            object-fit: cover;
+            border-radius: 50%;
+        }
+    }
+}
+.bg {
+    /* The image used */
+    background-image: url("https://mdbootstrap.com/img/Photos/Horizontal/Nature/full page/img(11).jpg");
+    /* Full height */
+    height: 100%;
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size:cover;
+  }
+.example-container{
+    /* The image used */
+    background-image: url("https://mdbootstrap.com/img/Photos/Horizontal/Nature/full page/img(11).jpg");
+    /* Full height */
+    height: 100%;
+    /* Center and scale the image nicely */
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.example-sidenav{
+    background-color: rgb(241, 241, 241);
+    width: 250px;
+}
+mat-drawer-content{
+    padding: 10px;
+}

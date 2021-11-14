@@ -1,4 +1,4 @@
-<H1> Welcome to the Landing Page</H1>
+<!-- <H1> Welcome to the Landing Page</H1>
 <div class="card mb-3" style="max-width: 540px;">
 
     <div class="row g-0">
@@ -20,11 +20,99 @@
     </div>
 
 </div>
-<button mdbRipple type="button" class="btn btn-success btn-rounded">Success</button>
+<button mdbRipple type="button" class="btn btn-success btn-rounded">Success</button> -->
+<div class="bg">
+    <mat-drawer-container class="example-container" autosize>
+        <mat-drawer #drawer class="example-sidenav" mode="side" [opened]="showFiller">
+            <mat-nav-list>
+                <div class="profile-card">
+                    <div class="header">
+                        <h2>SUPRATEEM BOSE</h2>
+                        <h4>demomail@gmail.com</h4>
+                    </div>
+                    <img src="data:image/jpeg;base64,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" alt="Its Life">
+                </div>
 
+                <mat-divider></mat-divider>
 
+                <h3 matSubheader>Demo Pages</h3>
+                <a mat-list-item>Page1</a>
+                <a mat-list-item>Page2</a>
+                <a mat-list-item>Page3</a>
 
+                <mat-divider></mat-divider>
+
+                <h3 matSubheader>Tools</h3>
+                <a mat-list-item>
+                    <mat-icon>group</mat-icon>
+                    Tool1
+                </a>
+
+                <a mat-list-item>
+                    <mat-icon>domain</mat-icon>
+                    Tool2
+                </a>
+            </mat-nav-list>
+        </mat-drawer>
+        <mat-drawer-content>
+            <div class="example-sidenav-content">
+                <button type="button" mat-button (click)="drawer.toggle()">
+                    Sidenav
+                </button>
+            </div>
+            <div class="row">
+                <div class="col-sm-3 col-md-3 col-lg-3">
+                    <div class="container">
+                        <div class="card" style="width: 18rem;">
+                            <img src="https://mdbootstrap.com/img/new/standard/nature/182.jpg" class="card-img-top"
+                                alt="..." />
+                            <div class="card-body">
+                                <p class="card-text">{{quote}}
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-4 col-md-4 col-lg-4">
+                    <div class="container">
+                        <div class="card w-50">
+                            <div class="card-body">
+                                <h5 class="card-header bg-success">Life Quote</h5>
+                                <p class="card-text">
+                                    With supporting text below as a natural lead-in to additional content.
+                                </p>
+                                <a href="#" class="btn btn-primary">Button</a>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-sm-5 col-md-5 col-lg-5">
+                    <mat-card>
+                        <mat-card-title>Actions Buttons</mat-card-title>
+                        <mat-card-subtitle>End</mat-card-subtitle>
+                        <mat-card-actions align="end">
+                          <button mat-button>Like</button>
+                          <button mat-button>SHARE</button>
+                        </mat-card-actions>
+                      </mat-card>
+                </div>
+            </div>
+            
+
+        </mat-drawer-content>
+    </mat-drawer-container>
+</div>
 <!-- <div class="card">
+    <div class="card-header bg-success">
+        hello
+    </div>
+    <div class="card-body">
+        card - body
+    </div>
+    <div class="card-footer">
+        hello
+    </div>
+
     <div class="card-header bg-success">
         hello
     </div>
